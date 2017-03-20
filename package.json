@@ -1,0 +1,42 @@
+{
+  "name": "farebuddy",
+  "version": "1.0.0",
+  "description": "saves you shekels by comparing the various ridesharing services and helps you avoid Uber's Surge/Lyft's Prime Time pricing.",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.1",
+    "googlemaps-v3-utility-library": "^1.0.1",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.8.3",
+    "mongoose-findorcreate": "^1.0.0",
+    "morgan": "^1.8.1",
+    "node-geocoder": "^3.16.0",
+    "node-uber": "^0.9.7",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-uber-v2": "^0.1.1",
+    "request": "^2.79.0",
+    "wgs84-util": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snuupy/FareBuddy.git"
+  },
+  "author": "Snuupy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snuupy/FareBuddy/issues"
+  },
+  "homepage": "https://github.com/Snuupy/FareBuddy#readme"
+}

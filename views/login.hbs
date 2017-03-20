@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="parent">
+
+  {{#if error}}
+  <div class="alert alert-danger" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span>
+    {{error}}
+  </div>
+  {{/if}}
+
+  <div class="inner">
+    <form method="POST" style="max-width: 300px; margin: auto; margin-top: 50px; border: 0.5px solid gray; padding: 30px 30px 30px 30px">
+      <div class="form-group">
+        <a class="btn btn-primary col-xs-12" style="background: black" href="/auth/uber">Login With Uber</a>
+      </div>
+      <br>
+    </form>
+  </div>
+
+  </div>
+
+</div>
+
+</body>

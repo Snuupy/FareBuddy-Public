@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+
+  {{!-- <form id="lookup" method="POST"> --}}
+  <div class="form-group">
+    <input id="searchTextFieldFromAddress" class="form-control" type="address" name="from" autocomplete="street-address" size="50" placeholder="Pickup Location">
+  </div>
+  <div class="form-group">
+    <input id="searchTextFieldToAddress" class="form-control" type="address" name="to" autocomplete="street-address" size="50" placeholder="Where to?">
+  </div>
+  <div class="form-group">
+    <button id="lookup" class="btn btn-default col-xs-12">Find me a cheap fare!</button>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <select style="display:none" id="uberDropdown" class="form-control"></select>
+  <button style="display:none" id="debug" class ="btn btn-default">console log prices</button>
+  <br>
+
+  {{!-- </form> --}}
+
+
+
+  <div id="cost"></div>
+
+  <div class="col-xs-12">
+    <div id="map" style="height: 600px; width: 100%"></div>
+  <div>
+
+  <script src="jquery-3.1.1.js"></script>
+
+
+  <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key='YOUR GOOGLE MAPS API KEY HERE'&libraries=places&callback=start"></script>
+  <script defer src="client.js"></script>
+
+  <div id="map_wrapper">
+    <div id="map_canvas" class="mapping"></div>
+  </div>
+
+</body>
+</html>
